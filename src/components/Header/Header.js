@@ -15,8 +15,8 @@ const Header = ({
                 }) => {
   const handleChange = (e) => {
     setCategory(e.target.value);
-    setWord(word);
     setMeanings([]);
+    setWord(word);
   };
   const handleText = debounce((text) => {
     setWord(text);
